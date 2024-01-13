@@ -6,25 +6,46 @@ body{
     font-family: 'Work Sans';
 }
 .container{
-    width: 1220px;
+    width: 80%;
     margin: 0 auto;
 }
+.primary-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.primary-p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    padding: 1rem;
+}
+.primary-btn{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background: #FF900E;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+}
+
+
 
 /* css starts here */
 .header-section{
     background: rgba(255, 144, 14, 0.10);
+    text-align: center;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2.9rem;
+    padding: 2.9rem;
 }
-nav h2{
-    color: #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 nav >ul{
     display: flex;
     list-style: none;
@@ -38,3 +59,66 @@ nav ul li a{
     color: #424242;
     font-weight: 500;
 }
+
+/* heading section */
+.heading{
+    /* text-align: center; */
+    padding: 3rem 24rem;
+}
+.heading h1{
+    font-size: 4rem;
+    color: #131313;
+    font-weight: 700;
+    padding: 1rem;
+}
+button{
+    transition: .5s;
+}
+button:hover{
+    background: blueviolet;
+    color: #faf8f8;
+}
+.banner img{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 2rem .5rem;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive section */
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container{
+        width: 80%;
+    }
+    .heading{
+        padding: 30px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .heading{
+        padding: 60px;     
+}
+.container{
+    width: 80%;
+}
+}
+
